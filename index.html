@@ -1,9 +1,9 @@
+<!DOCTYPE html >
 <html>
-<head>	
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Temporary Homepage</title>
-	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
-</head>
+	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css"></head>
 <body>
 	<div id='bg1'>
 		<img src="./images/4.png" style="height:400px;width:200px;"></div>
@@ -13,27 +13,46 @@
 		</div>
 		<ul>
 			<li>
-				<a href="">test</a>
+				<a href="javascript:void(0);" id="page2" onclick='scroll(2)'>test</a>
 			</li>
 			<li>
-				<a href="">test</a>
+				<a href="javascript:void(0);" id="page1" onclick='scroll(1)'>test</a>
 			</li>
 			<li>
-				<a href="http://xing240.github.io/index.html">Home</a>
+				<a href="javascript:void(0);" id="page0" onclick='scroll(0)'>Home</a>
 			</li>
 		</ul>
-		<div id='main'>
-			<div id='main-left'>
-			<img src="./images/head.jpg" id="headIcon">
-			<p>廖林兴</p>
-			</div>
-			<div id='main-right'>
-				<p><img src="./images/github.png"><span>xing240</span><p>
-				<p><img src="./images/mail.png"><span>linxing240@qq.com</span><p>
-				<p><img src="./images/qq.png"><span>787923046</span><p>
-				<p><img src="./images/weibo.png"><span>@木木兴这个笨小孩</span><p>
+		<div id='main' >
+			<div id='tal-panel'>
+				<div class="panel">
+					<div id='main-left'>
+						<img src="./images/head.jpg" id="headIcon">
+						<p>廖林兴</p>
+					</div>
+					<div id='main-right'>
+						<p>
+							<img src="./images/github.png">
+							<span>xing240</span>
+						</p>
+						<p>
+							<img src="./images/mail.png">
+							<span>linxing240@qq.com</span>
+						</p>
+						<p>
+							<img src="./images/qq.png">
+							<span>787923046</span>
+						</p>
+						<p>
+							<img src="./images/weibo.png">
+							<span>@木木兴这个笨小孩</span>
+						</p>
+					</div>
+				</div>
+				<div class="panel">2</div>
+				<div class="panel">3</div>
 			</div>
 		</div>
 	</div>
+	<script src="js/indexJs.js" type="text/javascript"></script>
 </body>
 </html>

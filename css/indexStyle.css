@@ -18,13 +18,14 @@
 		margin-left:-480px;
 	}
 	#bg2{
-		z-index: 5;
-		position: relative;
-		min-width: 680px;
-		min-height: 650px;
-		width: 100%;
-		height:100%;
-		background:radial-gradient(50% 80% ,transparent 40% , rgba(0, 0, 0, 1) ) repeat scroll 0% 0%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	min-width: 680px;
+	min-height: 650px;
+	top: 0px;
+	left: 0px;
+	background:radial-gradient(50% 80% ,transparent 40% , rgba(0, 0, 0, 1) ) repeat scroll 0% 0%;
 	}
 	#title{
 		margin: auto;
@@ -36,13 +37,13 @@
 		margin: 50px 20px 20px 80px ;
 		font-size: 45px;
 		color:rgb(19, 163, 6);
-		text-shadow:0px 0px 5px rgba(0,0,0,0.9);
+		text-shadow:0px 0px 5px rgb(0,0,0);
 	}
 	ul{
 		margin:0px auto;
 		width: 680px;
 		height: 45px;
-		list-style: none;
+		list-style: none outside none;
 	}
 	ul li{
 		float: right;
@@ -60,18 +61,39 @@
 		font-size: 20px;
 		text-decoration: none;
 		line-height: 1.6;
-		text-shadow:0px 0px 2px rgba(0,0,0,0.9);
+		text-shadow:0px 0px 2px rgb(0,0,0);
 	}
 	ul li a:hover{
+		color:rgb(238, 233, 251);
+	}
+	#page0{
 		color:rgb(238, 233, 251);
 	}
 	#main{
 		width: 640px;
 		height: 360px;
-		margin:auto;
+		margin:0px auto;
 		padding: 20px;
-		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
 		border-radius: 10px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+		overflow: hidden;
+	}
+	/*IE8及其以下*/
+	@media \0screen\,screen\9 {   
+		#main{  
+			filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000)
+		} 
+	} 
+	#tal-panel{
+		width: 2000px;
+		height: 360px;
+	}
+	.panel{
+		float: left;
+		width: 640px;
+		height: 360px;
+		margin-right:20px; 
+		color: rgb(240,240,240);
 	}
 	#main-left{
 		width: 200px;
@@ -92,12 +114,12 @@
 		float: left;
 		width: 370px;
 		height: 250px;
-		color: rgb(255, 242, 240);
 		font-size: 20px;
 		padding: 30px;
+		padding-top: 50px;
 	}
 	#main-right p{
-		margin:20px 0px 20px 50px;
+		margin: 0px 0px 20px 50px;
 	}
 	#main-right img{
 		float: left;
