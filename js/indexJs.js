@@ -1,10 +1,12 @@
 // 移动main中的内容
 
 function scroll(e) {
-	document.getElementById('page0').style.color = "rgb(236, 199, 9)";
-	document.getElementById('page1').style.color = "rgb(236, 199, 9)";
-	document.getElementById('page2').style.color = "rgb(236, 199, 9)";
+	for (var i = 0; i < 3; i++) {
+		document.getElementById('page' + i).style.color = "rgb(236, 199, 9)";
+		document.getElementById('page' + i).style.cursor = "pointer";
+	}
 	document.getElementById('page' + e).style.color = "rgb(238, 233, 251)";
+	document.getElementById('page' + e).style.cursor = "text";
 	var p = document.getElementById('main');
 	if (p.scrollLeft <= 0 && e != 0) {
 		var move = setInterval(function() {
