@@ -9,8 +9,14 @@
 	outline: none;
 }
 
-body{
+#bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+	min-height: 640px;
 	background: #fe6;
+	z-index: -10;
 }
 
 #header{
@@ -33,60 +39,45 @@ body{
 	-moz-border-radius: 6px;
 	-o-border-radius: 6px;
 	border-radius: 6px;
-}
-#P{
-	color: #f06;
-}
-#U{
-	color: #33b5e5;
-}
-#Z1{
-	color: #00f;
-}
-#Z2{
-	color: #0f0;
-}
-#L{
-	color: #f00;
-}
-#E1{
-	color: #fff;
-}
-#G{
-	color: #fa0;
-}
-#A{
-	color: #f03;
-}
-#M{
-	color: #0ef;
-}
-#E2{
-	color: #fc0;
-}
-#em{
 	color: #f00;
 }
 
-#settings{
-	height: 35px;
-	margin: 3px 20px 0;
-	float: right;
+#difficulty,#images{
+	height: 30px;
+	width: 70px;
+	position: absolute;
+	top: 5px;
+	cursor: pointer;
+	border-radius: 10px;
+	background: #ff0;
+	border: 3px dotted #f30;
+	color: #f00;
+	font-family: "幼圆";
+	font-weight: bolder;
+	font-size: 15px;
+}
+#difficulty{
+	right: 100px;
+}
+#images{
+	right: 180px;
 }
 
-#settings div{
+#restart,#sound{
 	width: 35px;
 	height: 35px;
-	float: left;
-	margin-right: 10px;
+	position: absolute;
+	top: 3px;
 	cursor: pointer;
 }
 
 #restart{
+	right: 52px;
 	background: url(img/restart.png);
 }
 
 #sound{
+	right: 10px;
 	background: url(img/music.png);
 }
 
@@ -156,13 +147,77 @@ body{
 	font-family: Tahoma;
 }
 
+#answer{
+	position: absolute;
+	left: -320px;
+	top: 50%;
+	z-index: 5px;
+	margin-top: -230px;
+	width: 350px;
+	height: 300px;
+}
+
+#pole1,#pole2{
+	position: absolute;
+	z-index: -2;
+	width: 30px;
+	height: 30px;
+	background: #d90;
+	-webkit-box-shadow: 1px 3px 5px #000 ;
+	-moz-box-shadow: 1px 3px 5px #000;
+	-o-box-shadow: 1px 3px 5px #000;
+	box-shadow: 1px 3px 5px #000;
+}
+#pole1{
+	top: 80px;
+}
+#pole2{
+	top: 190px;
+}
+
+#answer img{
+	margin-left: 20px;
+	width: 290px;
+	height: 290px;
+	float: left;
+	border-color:#d90;
+	border-style:solid;
+	border-radius: 5px;
+	border-width: 5px;
+}
+#answer span{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 100px;
+	background:rgb(255, 170, 34);
+	margin-top:100px;
+	border-radius: 0px 20px 20px 0px;
+	cursor: pointer;
+}
+#tri{
+	position: absolute;
+	top: 139px;
+	right: 6px;
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-width: 10px;
+	border-style: dashed dashed dashed solid;
+	border-color: transparent transparent transparent rgb(230, 20, 20);
+}
+#answer span:hover{
+	height: 200px;
+	margin-top:50px;
+}
+
 #puzzle{
 	width: 402px;
 	height: 402px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -260px;
+	margin-top: -264px;
 	margin-left: -201px;
 	background: #f00;
 	-webkit-box-shadow: 15px 15px 10px #000;
@@ -172,9 +227,7 @@ body{
 }
 
 .drop-zone{
-	width: 130px;
-	height: 130px;
-	margin: 3px 0 0 3px;
+	margin: 3px 0px 0px 3px;
 	float: left;
 	background: url(img/dz-bg.png);
 }
@@ -244,14 +297,11 @@ body{
 }
 
 #slice-container{
-	width: 1240px;
+	width: 2130px;
 	height: 130px;
 }
 
-.dz0, .dz1, .dz2, .dz3, .dz4, .dz5, .dz6, .dz7, .dz8{
-	width: 130px;
-	height: 130px;
-	background: url(img/hehe.jpg);
+.dz0, .dz1, .dz2, .dz3, .dz4, .dz5, .dz6, .dz7, .dz8, .dz9, .dz10, .dz11, .dz12, .dz13, .dz14, .dz15, .dz16, .dz17, .dz18, .dz19, .dz20, .dz21, .dz22, .dz23, .dz24{
 	display: inline-block;
 	cursor: move;
 	margin-right: 7px;
@@ -320,12 +370,12 @@ body{
 }
 
 #pause{
-	width: 402px;
-	height: 402px;
+	width: 408px;
+	height: 408px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -260px;
+	margin-top: -264px;
 	margin-left: -201px;
 	background: rgba(0,0,0,0.7);
 	cursor: pointer;
@@ -360,7 +410,7 @@ body{
 	left: 50%;
 	margin-top: -200px;
 	margin-left: -260px;
-	border: 10px dashed #f00;
+	border: 10px dashed #3f0;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	-o-border-radius: 40px;
@@ -370,7 +420,7 @@ body{
 	font-family: "黑体";
 	font-weight: bolder;
 	font-size: 60px;
-	color: #f00;
+	color: #3f0;
 	text-shadow: 0px 0px 5px #000;
 	-webkit-animation: shake 0.2s;
 	-webkit-animation-iteration-count: 4;

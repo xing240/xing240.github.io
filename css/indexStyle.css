@@ -5,6 +5,7 @@
 	}
 	body{
 		background: url(../images/bg1.jpg)  repeat-x 0% 0% fixed;
+		background-size: auto 100%;
 	}
 	img{
 		border:none;
