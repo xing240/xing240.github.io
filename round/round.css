@@ -1,0 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: "Microsoft YaHei";
+}
+canvas{
+	background: rgb(30,30,30);
+}
