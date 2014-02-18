@@ -1,11 +1,11 @@
 	*{
 		margin:0px;
 		padding: 0px;
-		font-family: "Microsoft YaHei";
 	}
 	body{
 		background: url(../images/bg1.jpg)  repeat-x 0% 0% fixed;
 		background-size: auto 100%;
+		font-family: "Microsoft YaHei";
 	}
 	img{
 		border:none;
@@ -28,10 +28,11 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	min-width: 680px;
+	min-width: 800px;
 	min-height: 650px;
 	top: 0px;
 	left: 0px;
+	background: rgba(0, 0, 0, 0.3);
 	background:radial-gradient(50% 80% ,transparent 40% , rgba(0, 0, 0, 1) ) repeat scroll 0% 0%;
 	}
 	#title{
