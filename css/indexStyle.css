@@ -239,24 +239,24 @@ ul {
     border-color: rgb(245, 90, 72) transparent transparent; 
 }
 .cir-two {
-	left: 0;
-	border-width: 110px;  
+	left: -41px;
+	border-width: 110px 151px;  
     border-color: rgb(100, 60, 192) transparent transparent; 
-	transform: rotate(117deg);
-	-ms-transform: rotate(117deg); /* Internet Explorer */
-	-moz-transform: rotate(117deg); /* Firefox */
-	-webkit-transform: rotate(117deg); /* Safari 和 Chrome */
-	-o-transform: rotate(117deg); /* Opera */
+	transform: rotate(126deg);
+	-ms-transform: rotate(126deg); /* Internet Explorer */
+	-moz-transform: rotate(126deg); /* Firefox */
+	-webkit-transform: rotate(126deg); /* Safari 和 Chrome */
+	-o-transform: rotate(126deg); /* Opera */
 }
 .cir-three {
-	left: 30px;
-	border-width: 110px 80px;  
+	left: 54px;
+	border-width: 110px 56px;  
     border-color: rgb(102, 217, 55) transparent transparent; 
-	transform: rotate(198deg);
-	-ms-transform: rotate(198deg);
-	-moz-transform: rotate(198deg);
-	-webkit-transform: rotate(198deg);
-	-o-transform: rotate(198deg);
+	transform: rotate(207deg);
+	-ms-transform: rotate(207deg);
+	-moz-transform: rotate(207deg);
+	-webkit-transform: rotate(207deg);
+	-o-transform: rotate(207deg);
 }
 .cir-four {
 	left: 54px;
